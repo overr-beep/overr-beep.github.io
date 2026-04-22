@@ -1,14 +1,14 @@
-/* --- Zmienne globalne --- */
+/* --- Zmienne globalne (Niebieska paleta OVERR) --- */
 :root {
-    --bg-dark: #0a0a0c;
-    --text-main: #f4f4f5;
-    --text-muted: #a1a1aa;
-    --accent-red: #e11d48;
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --card-border: rgba(255, 255, 255, 0.08);
+    --bg-dark: #020617; /* Bardzo głęboki granat, prawie czarny */
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --brand-blue: #1d4ed8; /* Twój mocny niebieski */
+    --brand-blue-glow: #3b82f6; /* Jaśniejszy niebieski do poświaty */
+    --card-bg: rgba(255, 255, 255, 0.02);
+    --card-border: rgba(59, 130, 246, 0.15); /* Delikatnie niebieskie ramki */
 }
 
-/* --- Reset i Base --- */
 * {
     margin: 0;
     padding: 0;
@@ -20,11 +20,9 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-main);
     overflow-x: hidden;
-    /* Płynne przewijanie natywne jako fallback */
     scroll-behavior: smooth; 
 }
 
-/* --- Typografia wzorowana na Apple --- */
 h1, h2 {
     letter-spacing: -0.04em;
     line-height: 1.1;
@@ -42,7 +40,7 @@ p {
     font-weight: 300;
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section z Twoim logo --- */
 .hero-section {
     height: 100vh;
     display: flex;
@@ -50,31 +48,52 @@ p {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle at 50% 50%, #1a1a24 0%, var(--bg-dark) 80%);
+}
+
+/* Duża niebieska poświata w tle (naśladuje plik z gradientem) */
+.blue-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(29, 78, 216, 0.2) 0%, rgba(2, 6, 23, 0) 70%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero-content {
     text-align: center;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.subtitle {
-    color: var(--accent-red);
-    font-family: monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-bottom: 1rem;
+.brand-logo {
+    width: 120px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
 }
 
 .title {
-    font-size: 6vw;
-    font-weight: 800;
+    font-size: 5vw;
+    font-weight: 900;
     margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.title-outline {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--text-main);
 }
 
 .scroll-indicator {
     font-size: 0.9rem;
-    opacity: 0.5;
+    color: var(--brand-blue-glow);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     animation: bounce 2s infinite;
 }
 
@@ -88,6 +107,8 @@ p {
 .tactical-zone {
     padding: 10vh 5vw;
     min-height: 100vh;
+    position: relative;
+    z-index: 5;
 }
 
 .zone-header {
@@ -109,24 +130,19 @@ p {
     padding: 2rem;
     display: flex;
     align-items: flex-end;
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, border-color 0.4s ease;
     backdrop-filter: blur(10px);
     cursor: pointer;
 }
 
+/* Niebieski efekt hover (blask) */
 .bento-item:hover {
     transform: translateY(-5px) scale(1.02);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent-red);
+    border-color: var(--brand-blue-glow);
+    box-shadow: 0 10px 40px -10px rgba(29, 78, 216, 0.5);
 }
 
-/* Rozmiary kafelków dla urozmaicenia */
 .bento-item.large { grid-column: span 8; grid-row: span 2; }
 .bento-item:not(.large):not(.wide):not(.portrait) { grid-column: span 4; }
-
 .bento-grid.asymmetrical .portrait { grid-column: span 4; grid-row: span 2; }
 .bento-grid.asymmetrical .wide { grid-column: span 8; }
-
-/* Motywy stref - przygotowane pod podmianę na Twoje grafiki */
-.arena-command .bento-item { border-radius: 12px; } /* Bardziej "ostre" wektory */
-.stadium-frontier .bento-item { box-shadow: inset 0 0 50px rgba(0,0,0,0.8); } /* Mrok i światło */
