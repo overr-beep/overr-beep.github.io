@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://overr-beep.github.io/sitemap.xml

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-label="Tactical logomark thumbnail">
+  <rect width="900" height="900" fill="#020617"/>
+  <circle cx="450" cy="450" r="330" fill="#07172c" stroke="#1d4ed8" stroke-width="5"/>
+  <g opacity=".26" stroke="#60a5fa">
+    <path d="M450 70V830M70 450H830"/>
+    <circle cx="450" cy="450" r="220" fill="none"/>
+    <circle cx="450" cy="450" r="120" fill="none"/>
+  </g>
+  <path d="M450 190 L660 330 L600 610 L450 710 L300 610 L240 330 Z" fill="#1d4ed8"/>
+  <path d="M450 265 L565 345 L530 560 L450 620 L370 560 L335 345 Z" fill="#020617"/>
+  <path d="M390 392 H510 L450 522 Z" fill="#bfdbfe"/>
+  <text x="450" y="790" fill="#93c5fd" font-family="monospace" font-size="32" text-anchor="middle">TACTICAL_MARK</text>
+</svg>

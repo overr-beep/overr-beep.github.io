@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Gaming dashboard thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.52" stop-color="#102a5c"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <path d="M0 600 L1200 380 L1200 800 L0 800 Z" fill="#06101f" opacity=".86"/>
+  <g opacity=".22" stroke="#60a5fa" stroke-width="1">
+    <path d="M0 120H1200M0 240H1200M0 360H1200M0 480H1200M0 600H1200"/>
+    <path d="M120 0V800M240 0V800M360 0V800M480 0V800M600 0V800M720 0V800M840 0V800M960 0V800M1080 0V800"/>
+  </g>
+  <g transform="translate(110 120)">
+    <rect width="980" height="560" rx="30" fill="#020617" opacity=".84" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="36" y="38" width="908" height="64" rx="14" fill="#0f1d33"/>
+    <circle cx="76" cy="70" r="9" fill="#22c55e"/>
+    <rect x="124" y="62" width="200" height="16" rx="8" fill="#60a5fa" opacity=".8"/>
+    <rect x="36" y="136" width="260" height="172" rx="18" fill="#0b1630" stroke="#1d4ed8"/>
+    <rect x="326" y="136" width="618" height="172" rx="18" fill="#071327" stroke="#1d4ed8"/>
+    <rect x="36" y="334" width="432" height="170" rx="18" fill="#071327" stroke="#1d4ed8"/>
+    <rect x="498" y="334" width="446" height="170" rx="18" fill="#0b1630" stroke="#1d4ed8"/>
+    <g filter="url(#glow)" fill="none" stroke="#60a5fa" stroke-width="7" stroke-linecap="round">
+      <path d="M80 250 C150 170 210 280 270 185"/>
+      <path d="M370 250 H880"/>
+      <path d="M370 198 H735"/>
+      <path d="M545 450 H890"/>
+    </g>
+    <g fill="#e2e8f0" font-family="monospace" font-size="28" font-weight="700">
+      <text x="70" y="430">MATCH_QUEUE</text>
+      <text x="550" y="430">PLAYER_MATRIX</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Cyber poster before thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <g opacity=".2" stroke="#94a3b8">
+    <path d="M0 220H900M0 440H900M0 660H900M0 880H900"/>
+    <path d="M150 0V1200M300 0V1200M450 0V1200M600 0V1200M750 0V1200"/>
+  </g>
+  <rect x="190" y="210" width="520" height="720" rx="32" fill="#0f172a" stroke="#334155" stroke-width="5"/>
+  <circle cx="450" cy="390" r="118" fill="#1e293b"/>
+  <path d="M310 840 C345 650 555 650 590 840 Z" fill="#1e293b"/>
+  <rect x="260" y="982" width="380" height="28" rx="14" fill="#475569"/>
+  <rect x="310" y="1040" width="280" height="18" rx="9" fill="#334155"/>
+  <text x="450" y="1120" fill="#94a3b8" font-family="monospace" font-size="32" text-anchor="middle">RAW_COMPOSITE</text>
+</svg>

@@ -1,66 +1,229 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OVERR DESIGN | Portfolio</title>
+    <title>Lukasz Michalski | OVERR Design</title>
+    <meta name="description" content="Portfolio of Lukasz Michalski - Graphic Designer and DTP Specialist focused on branding, visual systems, game assets and print-ready design.">
+    <meta name="author" content="Lukasz Michalski">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#03070d">
+    <link rel="canonical" href="https://overr-beep.github.io/">
+    <link rel="icon" type="image/svg+xml" href="overrlogo.svg">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
 
-    <header class="hero-section">
-        <div class="blue-glow"></div>
-        
-        <div class="hero-content">
-            <img src="overrlogo.svg" alt="Overr Design Logo" class="brand-logo">
-            <h1 class="title">OVERR<br><span class="title-outline">DESIGN</span></h1>
-            <div class="scroll-indicator">Odkryj projekty ↓</div>
+    <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="Overr Design home">
+            <img src="overrlogo.svg" alt="">
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
+            <a href="#work" data-nav-link>Work</a>
+            <a href="#zlote-guziki" data-nav-link>Projects</a>
+            <a href="#process" data-nav-link>Process</a>
+            <a href="#contact" data-nav-link>Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a class="header-button" href="#contact">Let's talk</a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <main>
-        <section class="tactical-zone arena-command">
-            <div class="zone-header">
-                <h2>Arena Command</h2>
-                <p>Strategia, wektory i bezbłędna kompozycja (TFT & Esport).</p>
+    <main id="top">
+        <section class="section hero scene-dark" aria-labelledby="hero-title">
+            <div class="hero-bg" aria-hidden="true">
+                <!-- Future swap target: /assets/hero-bg.png -->
+                <img class="hero-bg__image parallax" src="assets/portfolio/source/lukasz-hero-bg.webp" alt="" data-speed="-0.08" data-hero-mouse-bg>
+                <!-- Future swap target: /assets/hero-person.png -->
+                <img class="hero-bg__person parallax" src="assets/portfolio/source/lukasz-hero-person.webp" alt="" data-speed="0.06" data-hero-mouse-person>
             </div>
-            <div class="bento-grid">
-                <div class="bento-item large hexagon-motif">Studium Turnieju 01</div>
-                <div class="bento-item">Nakładki</div>
-                <div class="bento-item">Identyfikacja</div>
+
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Graphic Designer / DTP Specialist</p>
+                    <h1 id="hero-title">
+                        <span>I design with detail in mind.</span>
+                        <span>I create with <em>impact.</em></span>
+                    </h1>
+                    <p class="hero-lead">I create brand systems, social media visuals, game assets and production-ready print files with a sharp eye for detail.</p>
+                    <div class="actions">
+                        <a class="button button-primary" href="#work">View selected work</a>
+                        <a class="button button-ghost" href="assets/OVERR-portfolio.pdf">Download CV</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="tactical-zone stadium-frontier">
-            <div class="zone-header">
-                <h2>Stadium Frontier</h2>
-                <p>Emocje, dynamika i perfekcyjny raster (FIFA & Piłka nożna).</p>
-            </div>
-            <div class="bento-grid asymmetrical">
-                <div class="bento-item portrait card-motif">Karta Zawodnika</div>
-                <div class="bento-item wide">Plakat Meczowy</div>
-                <div class="bento-item">Social Promo</div>
-                <div class="bento-item">Bilet</div>
+        <section class="section intro-section" aria-labelledby="intro-title">
+            <div class="container intro-layout">
+                <div class="intro-copy reveal">
+                    <p class="eyebrow">Intro / Selected Works</p>
+                    <h2 id="intro-title">Selected visual systems built for detail, clarity and impact.</h2>
+                </div>
+
+                <div class="intro-panel reveal">
+                    <p>Three featured projects show different parts of my design workflow: product presentation, game-ready assets and event identity systems.</p>
+                    <div class="intro-links" aria-label="Selected projects">
+                        <a href="#work">01 Matcha Zest</a>
+                        <a href="#eafc">02 EAFC Card System</a>
+                        <a href="#zlote-guziki">03 Złote Guziki Tournament</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="tactical-zone social-feed">
-            <div class="zone-header">
-                <h2>Social Grid</h2>
-                <p>Precyzyjna komunikacja w każdym formacie.</p>
+        <section class="section project-section project-matcha" id="work" aria-labelledby="matcha-title" data-matcha-section>
+            <div class="container project-grid" id="matcha">
+                <article class="project-copy reveal">
+                    <p class="eyebrow">Featured Project / Project 01</p>
+                    <h2 id="matcha-title">Matcha Zest!</h2>
+                    <p>A fresh product visual system for a matcha drink concept, built around clean packaging, flavour variants and commercial mockup presentation.</p>
+                    <div class="tag-row" aria-label="Project tags">
+                        <span>Packaging</span>
+                        <span>Product Visual</span>
+                        <span>Branding</span>
+                    </div>
+                    <a class="case-button" href="#contact">View case study</a>
+                </article>
+
+                <div class="project-visual matcha-visual reveal" aria-hidden="true">
+                    <!-- Future swap target: /assets/matcha-cans.png -->
+                    <img class="matcha-word matcha-word--green parallax" src="assets/portfolio/source/matcha-zest-green.png" alt="" data-speed="-0.04">
+                    <img class="matcha-word matcha-word--yuzu parallax" src="assets/portfolio/source/matcha-zest-yellow.png" alt="" data-speed="-0.04">
+                    <img class="matcha-word matcha-word--pink parallax" src="assets/portfolio/source/matcha-zest-pink.png" alt="" data-speed="-0.04">
+                    <img class="matcha-word matcha-word--blue parallax" src="assets/portfolio/source/matcha-zest-blue.png" alt="" data-speed="-0.04">
+                    <img class="matcha-podium" src="assets/portfolio/source/matcha-podium-base.png" alt="">
+                    <img class="matcha-can matcha-can--pink parallax" src="assets/portfolio/source/matcha-can-pink.png" alt="" data-speed="0.04" data-matcha-variant="pink">
+                    <img class="matcha-can matcha-can--yuzu parallax" src="assets/portfolio/source/matcha-can-yuzu.png" alt="" data-speed="0.02" data-matcha-variant="yuzu">
+                    <img class="matcha-can matcha-can--blue parallax" src="assets/portfolio/source/matcha-can-blue.png" alt="" data-speed="0.06" data-matcha-variant="blue">
+                    <img class="matcha-fruit matcha-fruit--lemons" src="assets/portfolio/source/matcha-lemons.png" alt="">
+                    <img class="matcha-fruit matcha-fruit--dragon" src="assets/portfolio/source/matcha-dragonfruit.png" alt="">
+                    <img class="matcha-fruit matcha-fruit--lavender" src="assets/portfolio/source/matcha-lavender.png" alt="">
+                    <div class="matcha-label-preview" data-matcha-label-open aria-hidden="true">
+                        <span>Click can</span>
+                        <img data-matcha-label-preview src="assets/portfolio/source/matcha-label-yuzu.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="bento-grid tight-grid">
-                <div class="bento-item vertical">Story 01</div>
-                <div class="bento-item square">Post 01</div>
-                <div class="bento-item square">Post 02</div>
-                <div class="bento-item horizontal">Banner</div>
+        </section>
+
+        <section class="section project-section project-eafc" id="eafc" aria-labelledby="eafc-title">
+            <div class="container project-grid project-grid--reverse">
+                <div class="project-visual eafc-visual reveal" aria-hidden="true">
+                    <!-- Future swap target: /assets/eafc-cards.png -->
+                    <img src="assets/portfolio/source/silver-card-full.png" alt="">
+                    <img src="assets/portfolio/source/gold-card-full.png" alt="">
+                    <img src="assets/portfolio/source/icon-card-full.png" alt="">
+                    <img src="assets/portfolio/source/black-gold-card-full.png" alt="">
+                    <img src="assets/portfolio/source/wonderkid-card-full.png" alt="">
+                </div>
+
+                <article class="project-copy project-copy--right reveal">
+                    <p class="eyebrow">Featured Project / Project 02</p>
+                    <h2 id="eafc-title">EAFC Card System</h2>
+                    <p>Custom football card collection with multiple rarity levels, metallic textures and game-ready presentation assets.</p>
+                    <div class="tag-row tag-row--blue" aria-label="Project tags">
+                        <span>Game UI</span>
+                        <span>Card Design</span>
+                        <span>Visual System</span>
+                    </div>
+                    <a class="case-button case-button--blue" href="#contact">View case study</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cosmic-transition" aria-hidden="true">
+            <div class="container">
+                <span></span>
+            </div>
+        </section>
+
+        <section class="section project-section project-cosmic scene-dark" id="zlote-guziki" aria-labelledby="zg-title">
+            <div class="cosmic-bg" aria-hidden="true">
+                <!-- Future swap target: /assets/cosmic-bg.png -->
+                <img class="cosmic-bg__sky parallax" src="assets/portfolio/source/purple-sky-upscaled.webp" alt="" data-speed="-0.05">
+                <!-- Future swap target: /assets/cosmic-rocks.png -->
+                <img class="cosmic-bg__rocks" src="assets/portfolio/source/cosmic-rocks-clean.png" alt="">
+            </div>
+
+            <div class="container project-grid cosmic-grid">
+                <article class="project-copy project-copy--dark reveal">
+                    <p class="eyebrow">Featured Project / Project 03</p>
+                    <h2 id="zg-title">Złote Guziki Tournament</h2>
+                    <p>Visual identity for a streamer tournament - posters, social media assets, match graphics, stream visuals and website elements.</p>
+                    <div class="tag-row tag-row--gold" aria-label="Project tags">
+                        <span>Event Branding</span>
+                        <span>Social Media</span>
+                        <span>Stream Graphics</span>
+                    </div>
+                    <a class="case-button case-button--gold" href="#contact">View case study</a>
+                </article>
+
+                <div class="project-visual zg-visual reveal" aria-hidden="true">
+                    <img class="zg-art parallax" src="assets/portfolio/source/zlote-guziki-full.png" alt="" data-speed="0.04">
+                </div>
+            </div>
+        </section>
+
+        <section class="section process-section" id="process" aria-labelledby="process-title">
+            <div class="container process-layout">
+                <div class="process-heading reveal">
+                    <p class="eyebrow">Skills / Tools / Process</p>
+                    <h2 id="process-title">From visual direction to production-ready files.</h2>
+                </div>
+
+                <div class="process-grid">
+                    <article class="process-card reveal">
+                        <span>01</span>
+                        <h3>Brand Systems</h3>
+                        <p>Logo usage, type, color, social templates and reusable design rules.</p>
+                    </article>
+                    <article class="process-card reveal">
+                        <span>02</span>
+                        <h3>Game & Stream Assets</h3>
+                        <p>Cards, overlays, tournament visuals and fast-turnaround content packs.</p>
+                    </article>
+                    <article class="process-card reveal">
+                        <span>03</span>
+                        <h3>DTP & Print</h3>
+                        <p>Production files prepared with clean structure, exports and print details.</p>
+                    </article>
+                    <article class="process-card reveal">
+                        <span>04</span>
+                        <h3>Case Study Ready</h3>
+                        <p>Each featured project has space for process notes, deliverables and outcomes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section scene-dark" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-layout reveal">
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title">Ready to build a visual system with impact?</h2>
+                <div class="actions">
+                    <a class="button button-primary" href="mailto:lukasz.overr.michalski@gmail.com">Let's talk</a>
+                    <a class="button button-ghost" href="assets/OVERR-portfolio.pdf">Download CV</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <a class="back-to-top" href="#top" data-back-to-top aria-label="Back to top">Up</a>
+    <div class="label-modal" data-matcha-label-modal aria-hidden="true">
+        <button class="label-modal__backdrop" type="button" data-matcha-label-close aria-label="Close label preview"></button>
+        <div class="label-modal__dialog" role="dialog" aria-modal="true" aria-label="Full Matcha label preview">
+            <button class="label-modal__close" type="button" data-matcha-label-close>Close</button>
+            <img data-matcha-label-full src="assets/portfolio/source/matcha-label-yuzu.png" alt="Full Matcha label preview">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
